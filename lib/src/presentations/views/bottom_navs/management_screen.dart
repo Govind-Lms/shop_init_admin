@@ -1,10 +1,6 @@
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:shop_init_admin/src/consts/constant.dart';
-import 'package:shop_init_admin/src/consts/uiconst.dart';
 import 'package:shop_init_admin/src/presentations/views/dashboard/components/product_category.dart';
 import 'package:shop_init_admin/src/presentations/widgets/custom_app_bar.dart';
 
@@ -18,12 +14,8 @@ class ManagementScreen extends StatefulWidget {
 class _ManagementScreenState extends State<ManagementScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
-    FirebaseMessaging.instance.getToken().then((onValue)async{
-      final data = await orderLengthRef.get();
-        print("data ${data.docs.length}");
-    });
+    
   }
   @override
   Widget build(BuildContext context) {
