@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "32644345180",
+    "project_id": "sho-pinit",
+    "storage_bucket": "sho-pinit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32644345180:android:74160e374d405f202a2599",
+        "android_client_info": {
+          "package_name": "com.example.shop_init"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32644345180-qqadgi1c91fo0qnehrna1i7refo4tqoc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shop_init",
+            "certificate_hash": "fac8eced68f9330d47c66653cac1002b17a996c1"
+          }
+        },
+        {
+          "client_id": "32644345180-bqq5rcks2goi5rtjjmkkn8okt5fh79e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9oJmxbQGIYPDQx1bUTT24ImQ2yagxd34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32644345180-bqq5rcks2goi5rtjjmkkn8okt5fh79e1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "32644345180-dc2r7qoo79p5tm2kd3blgtd0caeb3eh8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.shopInit"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32644345180:android:2c7ac5fa3c5ff1542a2599",
+        "android_client_info": {
+          "package_name": "com.example.shop_init_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32644345180-bqq5rcks2goi5rtjjmkkn8okt5fh79e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9oJmxbQGIYPDQx1bUTT24ImQ2yagxd34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32644345180-bqq5rcks2goi5rtjjmkkn8okt5fh79e1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "32644345180-dc2r7qoo79p5tm2kd3blgtd0caeb3eh8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.shopInit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"sho-pinit","appId":"1:32644345180:android:2c7ac5fa3c5ff1542a2599","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"sho-pinit","configurations":{"android":"1:32644345180:android:2c7ac5fa3c5ff1542a2599","web":"1:32644345180:web:dff16b47fe012b092a2599"}}}}}}
