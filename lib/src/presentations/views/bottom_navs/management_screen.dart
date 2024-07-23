@@ -35,9 +35,10 @@ class _ManagementScreenState extends State<ManagementScreen> {
           Expanded(
             flex: 1,
             child: GridView.builder(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                childAspectRatio: 3/2,
+              gridDelegate:   SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: MediaQuery.sizeOf(context).width/2,               
+                childAspectRatio: 2/1,
+
               ),
               itemCount: managementNames.length,
               itemBuilder: (BuildContext context, int index) {

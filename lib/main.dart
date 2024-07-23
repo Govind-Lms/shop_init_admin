@@ -25,7 +25,7 @@ import 'src/presentations/views/bottom_navs/user_screen.dart';
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   await setupFlutterNotifications();
-  showFlutterNotification(message);
+  // showFlutterNotification(message);
   print('Handling a background message ${message.messageId}');
 }
 

@@ -7,6 +7,7 @@ import 'package:shop_init_admin/src/consts/uiconst.dart';
 import 'package:shop_init_admin/src/core/models/item_model.dart';
 import 'package:shop_init_admin/src/core/notifier/quantity_notifier.dart';
 import 'package:shop_init_admin/src/presentations/views/product/add/update_product.dart';
+import 'package:shop_init_admin/src/presentations/views/product/photo_view.dart';
 import 'package:shop_init_admin/src/presentations/views/product/view/widgets/color_part.dart';
 import 'package:shop_init_admin/src/presentations/views/dashboard/dialogs/delete_dialog.dart';
 import 'package:shop_init_admin/src/presentations/views/product/view/widgets/sized_part.dart';
@@ -56,35 +57,40 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
               children: [
                 
                 ///mainImage
-                Container(
-                  height: MediaQuery.of(context).size.height / 2,
-                  width: MediaQuery.of(context).size.width,
-                  color: Colors.black12,
-                  child: PageView(
-                    controller: controller,
-                    onPageChanged: onPageChanged,
-                    children: List.generate(
-                      widget.productModel.images!.length + 1,
-                      (index) {
-                        if (index == 0) {
-                          return CachedNetworkImage(
-                            fit: BoxFit.cover,
-                            imageUrl: widget.productModel.imageUrl!,
-                          );
-                        } else {
-                          return Container(
-                            width: 80.0,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10.0),
-                                color: Colors.grey,
-                                border: Border.all(width: 1)),
-                            child: CachedNetworkImage(
+                GestureDetector(
+                  onTap: (){
+                    nav(context, PhotoView(images: widget.productModel.images!, image: widget.productModel.imageUrl!,));
+                  },
+                  child: Container(
+                    height: MediaQuery.of(context).size.height / 2,
+                    width: MediaQuery.of(context).size.width,
+                    color: Colors.black12,
+                    child: PageView(
+                      controller: controller,
+                      onPageChanged: onPageChanged,
+                      children: List.generate(
+                        widget.productModel.images!.length + 1,
+                        (index) {
+                          if (index == 0) {
+                            return CachedNetworkImage(
                               fit: BoxFit.cover,
-                              imageUrl: widget.productModel.images![index - 1],
-                            ),
-                          );
-                        }
-                      },
+                              imageUrl: widget.productModel.imageUrl!,
+                            );
+                          } else {
+                            return Container(
+                              width: 80.0,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                  color: Colors.grey,
+                                  border: Border.all(width: 1)),
+                              child: CachedNetworkImage(
+                                fit: BoxFit.cover,
+                                imageUrl: widget.productModel.images![index - 1],
+                              ),
+                            );
+                          }
+                        },
+                      ),
                     ),
                   ),
                 ),

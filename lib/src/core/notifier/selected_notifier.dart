@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 
 
 final ValueNotifier<String> selectedColor = ValueNotifier<String>('');
-final ValueNotifier<String> selectedSize = ValueNotifier<String>('white');
+final ValueNotifier<String> selectedSize = ValueNotifier<String>('');
 
 
-final ValueNotifier<bool> uploaded = ValueNotifier<bool>(false);
+final ValueNotifier<bool> visibility = ValueNotifier<bool>(false);

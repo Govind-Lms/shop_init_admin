@@ -42,12 +42,12 @@ class _BottomNavScreenState extends State<BottomNavScreen>
               backgroundColor: theme.primaryColor,
               activeIcon: const Icon(NavIcons.orders_fill),
                 icon: Icon(NavIcons.orders, color: theme.primaryColorDark),
-                label: "Users"),
+                label: "Management"),
             BottomNavigationBarItem(
               backgroundColor: theme.primaryColor,
               activeIcon: const Icon(NavIcons.orderLists_fill),
                 icon: Icon(NavIcons.orderLists, color: theme.primaryColorDark),
-                label: "Order Lists"),
+                label: "Preview"),
             // BottomNavigationBarItem(
             //   backgroundColor: theme.primaryColor,
             //   activeIcon: const Icon(NavIcons.settings_fill),

@@ -16,10 +16,12 @@ class ReUseGridView extends StatelessWidget {
       onRefresh: onRefresh,
       child: GridView.builder(
         gridDelegate:
-            const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
+            const SliverGridDelegateWithMaxCrossAxisExtent(
+          // crossAxisCount: 2,
           // childAspectRatio: 0.56,
           mainAxisExtent: 300,
+          maxCrossAxisExtent: 4,
+          
         ),
         shrinkWrap: true,
         itemCount: itemCount,

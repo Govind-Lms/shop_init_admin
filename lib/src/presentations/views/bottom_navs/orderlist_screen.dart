@@ -18,7 +18,6 @@ class OrderListScreen extends StatelessWidget {
     final theme = Theme.of(context);
     return Scaffold(
       backgroundColor: theme.primaryColor,
-      
       body: SafeArea(
         child: ValueListenableBuilder(
             valueListenable: filter.statusFilter,
@@ -79,7 +78,7 @@ class OrderListScreen extends StatelessWidget {
                           ),
                         );
                       },
-                      icon: const Icon(Iconsax.filter_edit5,size: 20,),
+                      icon: const Icon(Iconsax.setting_35,size: 20,),
                     ),
                   ),
                   Expanded(
